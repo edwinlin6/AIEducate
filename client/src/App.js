@@ -1,9 +1,9 @@
 import logo from './logo.svg';
+import { useState, useEffect } from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './components/NavigationBar';
 import ImageCarousel from './components/ImageCarousel';
-import StaticExample from './components/StaticExample';
 import Input from './components/Input';
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
       <div>
         <Input></Input>
       </div>
+        <p>{data.answer}</p>
     </div>
   );
 }
